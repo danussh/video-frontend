@@ -1,0 +1,59 @@
+.header {
+  font-family: cursive;
+  color: aquamarine;
+}
+
+.myId {
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchname {
+  margin-left: 3px;
+  margin-left: 5px;
+  margin-top: 3px;
+  font-family: "cursive";
+}
+
+.search {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.searchList {
+  height: 250px;
+  overflow-y: auto;
+}
+
+.phoneIcon {
+  cursor: pointer;
+  color: #227f29;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  height: 30 px;
+  border-color: #dc3545;
+}
+
+.phoneIcon:hover {
+  cursor: pointer;
+  color: #7f2222;
+}
+
+@media (max-width: 800px) {
+  .video-container {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .searchList {
+    height: 250px;
+    overflow-y: auto;
+  }
+}
