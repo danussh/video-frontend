@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/video-frontend/static/css/main.7852eeeb.chunk.css",
+    "main.js": "/video-frontend/static/js/main.ddff6fea.chunk.js",
+    "main.js.map": "/video-frontend/static/js/main.ddff6fea.chunk.js.map",
+    "runtime-main.js": "/video-frontend/static/js/runtime-main.355d0bfb.js",
+    "runtime-main.js.map": "/video-frontend/static/js/runtime-main.355d0bfb.js.map",
+    "static/css/2.f4c56af9.chunk.css": "/video-frontend/static/css/2.f4c56af9.chunk.css",
+    "static/js/2.f2e68f62.chunk.js": "/video-frontend/static/js/2.f2e68f62.chunk.js",
+    "static/js/2.f2e68f62.chunk.js.map": "/video-frontend/static/js/2.f2e68f62.chunk.js.map",
+    "static/js/3.0967f503.chunk.js": "/video-frontend/static/js/3.0967f503.chunk.js",
+    "static/js/3.0967f503.chunk.js.map": "/video-frontend/static/js/3.0967f503.chunk.js.map",
+    "index.html": "/video-frontend/index.html",
+    "static/css/2.f4c56af9.chunk.css.map": "/video-frontend/static/css/2.f4c56af9.chunk.css.map",
+    "static/css/main.7852eeeb.chunk.css.map": "/video-frontend/static/css/main.7852eeeb.chunk.css.map",
+    "static/js/2.f2e68f62.chunk.js.LICENSE.txt": "/video-frontend/static/js/2.f2e68f62.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.355d0bfb.js",
+    "static/css/2.f4c56af9.chunk.css",
+    "static/js/2.f2e68f62.chunk.js",
+    "static/css/main.7852eeeb.chunk.css",
+    "static/js/main.ddff6fea.chunk.js"
+  ]
+}
