@@ -36,6 +36,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://videocall-zoomish.herokuapp.com/",
   "eslintConfig": {
     "extends": [
       "react-app",
