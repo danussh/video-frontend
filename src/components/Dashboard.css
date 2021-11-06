@@ -1,16 +1,38 @@
 .header {
   font-family: cursive;
-  color: aquamarine;
+  color: rgb(113 52 221);
+}
+
+.container{
+  box-shadow: 10px 10px 5px #dadada;
 }
 
 .myId {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.MuiIconButton-colorPrimary {
+  color: #e34545 !important;
+}
+
+.calling {
+  color: white;
 }
 
 .block {
   display: flex;
   justify-content: space-between;
+  border-style: solid;
+  border-width: thin;
+  border-color: #ffffff;
+}
+
+.caliing {
+  color: rgb(253, 140, 2);
 }
 
 .searchname {
@@ -18,6 +40,7 @@
   margin-left: 5px;
   margin-top: 3px;
   font-family: "cursive";
+  color: #000000;
 }
 
 .search {
@@ -28,26 +51,59 @@
 .searchList {
   height: 250px;
   overflow-y: auto;
+  background-color: #ebf2f9;
+  border-radius: 10px;
 }
 
 .phoneIcon {
   cursor: pointer;
-  color: #227f29;
+  color: #c52828;
 }
 
 .btn-danger {
   color: #fff;
-  background-color: #dc3545;
+  background-color: #ec5463;
   height: 30 px;
   border-color: #dc3545;
 }
 
 .phoneIcon:hover {
   cursor: pointer;
-  color: #7f2222;
+  color: #3af549;
+}
+
+.main {
+  height: 100vh;
+}
+
+.MuiFormControl-root {
+  border: 0;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
+  background-color: white !important;
+  border-radius: 22px !important;
 }
 
 @media (max-width: 800px) {
+  .video-container {
+    justify-content: space-between;
+    flex-direction: column;
+    
+  }
+  .searchList {
+    height: 250px;
+    overflow-y: auto;
+  }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 450px) {
   .video-container {
     justify-content: space-between;
     flex-direction: column;
@@ -55,5 +111,59 @@
   .searchList {
     height: 250px;
     overflow-y: auto;
+  }
+  .vid {
+    width: 320px !important;
+  }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 350px) {
+  .video-container {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .searchList {
+    height: 250px;
+    overflow-y: auto;
+  }
+  .vid {
+    width: 260px !important;
+  }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 320px) {
+  .video-container {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .searchList {
+    height: 250px;
+    overflow-y: auto;
+    width: 260px;
+  }
+  .vid {
+    width: 270px !important;
+  }
+  .MuiFormControl-root {
+    border: 0;
+    margin: 0;
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+    vertical-align: top;
+  }
+  .btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    height: 30 px;
+    padding: 10 px;
+    height: 50 px;
+    border-color: #dc3545;
+    margin-right: 30 px;
   }
 }
