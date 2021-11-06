@@ -1,3 +1,5 @@
+FRONTEND DEPLOYED ON NETLIFY : https://eager-jang-15b24f.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
