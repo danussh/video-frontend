@@ -1,5 +1,14 @@
 FRONTEND DEPLOYED ON NETLIFY : https://eager-jang-15b24f.netlify.app/
 
+Video application To call a user registerd in app Search Oncle logged in Can call the registerd users
+Responsive Application for all Mobile Screens
+Call a user by Sharing the ID to another user
+Login and Register Functionality 
+Password Encryted, Protected Route once logeed in Cannot go back 
+Call a user Available from search
+Refer To ScreenShots Pls
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
