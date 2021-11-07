@@ -16,6 +16,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useHistory } from "react-router-dom";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
+import Navbar from "./Navbar";
 
 function Copyright(props) {
   return (
@@ -26,9 +27,9 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
+      <a href="https://danusshpportfolio.netlify.app/" target="_blank">
+        Danussh PortFolio
+      </a>
       {new Date().getFullYear()}
     </Typography>
   );
@@ -97,7 +98,7 @@ const Login = () => {
         }
 
         if ((err.message = "Network Error")) {
-          toast.error("Try Again Later", {
+          toast.error("Network Error", {
             position: "top-right",
             autoClose: 3000,
           });
@@ -107,6 +108,7 @@ const Login = () => {
 
   return (
     <>
+      <Navbar />
       <ThemeProvider theme={theme}>
         <Container component="main" maxWidth="xs">
           <CssBaseline />

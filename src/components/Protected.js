@@ -1,19 +1,12 @@
-import React,{useEffect} from 'react'
-import { useHistory } from 'react-router'
+import React, { useEffect } from "react";
+import { Redirect, Route } from "react-router";
 
 const Protected = (props) => {
-let Cmp=props.cmp
-const history=useHistory();
-      useEffect(()=>{
-    if(!sessionStorage.getItem("accesToken")){
-      history.push("/")
-    }
-  },[])
-    return (
-        <div>
-            <Cmp/>
-        </div>
-    )
-}
+  if (!sessionStorage.getItem("accesToken")) {
+    return <Redirect to="/" />;
+  }
 
-export default Protected
+  return <Route {...props} />;
+};
+
+export default Protected;

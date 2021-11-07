@@ -3,7 +3,7 @@
   color: rgb(113 52 221);
 }
 
-.container{
+.container {
   box-shadow: 10px 10px 5px #dadada;
 }
 
@@ -93,7 +93,6 @@
   .video-container {
     justify-content: space-between;
     flex-direction: column;
-    
   }
   .searchList {
     height: 250px;

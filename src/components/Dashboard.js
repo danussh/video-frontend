@@ -15,6 +15,7 @@ import "./Dashboard.css";
 import { useHistory } from "react-router-dom";
 import Backdrop from "@mui/material/Backdrop";
 import Tooltip from "@mui/material/Tooltip";
+import Navbar from "./Navbar";
 
 const useStyles = makeStyles((theme) => ({
   search: {
@@ -44,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const socket = io.connect("https://videocall-zoomish.herokuapp.com");
+
 function Dashboard() {
   const classes = useStyles();
   const history = useHistory();
@@ -69,11 +71,6 @@ function Dashboard() {
     window.location.replace("/dashboard");
   });
 
-  const logout = () => {
-    sessionStorage.clear();
-    history.push("/");
-  };
-
   useEffect(() => {
     navigator.mediaDevices
       .getUserMedia({ video: true, audio: true })
@@ -94,7 +91,6 @@ function Dashboard() {
     });
 
     socket.on("callSearchUser", (data) => {
-      // console.log(data)
       setReceivingCall(true);
       setOpen(false);
       setCaller(data.from);
@@ -176,6 +172,7 @@ function Dashboard() {
     connectionRef.current = peer;
   };
 
+  //answer a call
   const answerCall = () => {
     setCallAccepted(true);
     setOpen(false);
@@ -209,6 +206,7 @@ function Dashboard() {
 
   return (
     <>
+      <Navbar />
       <div className="main">
         <div className="d-flex justify-content-around">
           <h3 className="header">
@@ -217,9 +215,6 @@ function Dashboard() {
               Welcome {userData.firstName}
             </span>
           </h3>
-          <button className="btn btn-danger mt-1" onClick={logout}>
-            Logout
-          </button>
         </div>
         <div className="container mt-2">
           <div className="video-container d-flex justify-content-around">

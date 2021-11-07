@@ -1,7 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const Navbar = () => {
+  const history = useHistory();
+
+  const logout = () => {
+    sessionStorage.clear();
+    history.push("/");
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,15 +44,18 @@ const Navbar = () => {
             ) : (
               <>
                 <li className="nav-item active">
-                  <Link className="nav-link" to="/dashboard">
+                  <a className="nav-link" href="/dashboard">
                     DashBoard
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/timelogs">
+                  <a className="nav-link" href="/timelogs">
                     Time Logs
-                  </Link>
+                  </a>
                 </li>
+                <button className="btn btn-danger " onClick={logout}>
+                  Logout
+                </button>
               </>
             )}
           </ul>

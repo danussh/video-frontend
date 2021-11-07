@@ -3,8 +3,6 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -17,6 +15,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
+import Navbar from "./Navbar";
 
 const theme = createTheme();
 
@@ -38,7 +37,6 @@ const Signup = () => {
       .then((resp) => {
         console.log(resp);
         setOpen(false);
-        // history.push('/')
         toast.success("Registered Sucessfully", {
           position: "top-center",
           autoClose: 3000,
@@ -55,6 +53,7 @@ const Signup = () => {
 
   return (
     <>
+      <Navbar />
       <ThemeProvider theme={theme}>
         <Container component="main" maxWidth="xs">
           <CssBaseline />
