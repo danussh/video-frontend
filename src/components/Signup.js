@@ -15,26 +15,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useHistory } from "react-router-dom";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
-
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>
-      {new Date().getFullYear()}
-    </Typography>
-  );
-}
 
 const theme = createTheme();
 
@@ -129,14 +111,6 @@ const Signup = () => {
                     autoComplete="new-password"
                   />
                 </Grid>
-                <Grid item xs={12}>
-                  <FormControlLabel
-                    control={
-                      <Checkbox value="allowExtraEmails" color="primary" />
-                    }
-                    label="I want to receive inspiration, marketing promotions and updates via email."
-                  />
-                </Grid>
               </Grid>
               <Button
                 type="submit"
@@ -153,7 +127,6 @@ const Signup = () => {
               </Grid>
             </Box>
           </Box>
-          <Copyright sx={{ mt: 5 }} />
         </Container>
       </ThemeProvider>
       <Backdrop
