@@ -1,4 +1,4 @@
-FRONTEND DEPLOYED ON NETLIFY : https://eager-jang-15b24f.netlify.app/
+FRONTEND DEPLOYED ON NETLIFY : https://takeleap.netlify.app/
 
 Video application To call a user registerd in app Search Oncle logged in Can call the registerd users
 Responsive Application for all Mobile Screens
