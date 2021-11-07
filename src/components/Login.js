@@ -96,13 +96,6 @@ const Login = () => {
             autoClose: 3000,
           });
         }
-
-        if ((err.message = "Network Error")) {
-          toast.error("Network Error", {
-            position: "top-right",
-            autoClose: 3000,
-          });
-        }
       });
   };
 
