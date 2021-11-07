@@ -2,11 +2,15 @@ FRONTEND DEPLOYED ON NETLIFY : https://takeleap.netlify.app/
 
 Video application To call a user registerd in app Search Oncle logged in Can call the registerd users
 Responsive Application for all Mobile Screens
-Call a user by Sharing the ID to another user
+Call a user by Sharing the ID to another user or Call via Search List
 Login and Register Functionality 
-Password Encryted, Protected Route once logeed in Cannot go back 
+Password Encryted, Protected Route once logeed out canot go back to /dashboard
 Call a user Available from search
-Refer To ScreenShots Pls
+Time Sheet to store Logged in users in /timelogs
+Export the time sheet to excel on click of export
+Hover over the icons to show tool tip
+All Adequate functionality is Embedded in This App
+Refer To ScreenShots Pls at screenshots.md file
 
 
 # Getting Started with Create React App
